@@ -1,0 +1,10 @@
+.navbar-nav .nav-link {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: #ED9821;
+  }
+  
+  .navbar {
+    background-color: #392305;
+  }
