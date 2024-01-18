@@ -1,0 +1,45 @@
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.card-h{
+  margin-top: 5px;
+  font-size: small;
+}
+
+.main-color{
+  color: rgb(57, 35, 5);
+}
+
+.btn-h{
+  color: rgb(57, 35, 5);
+  margin-right: 15px;
+  text-decoration-line: none;
+
+}
+.btn-h:hover{
+  text-decoration-color:rgb(57, 35, 5) ;
+  color: rgb(57, 35, 5);
+  
+}
+.img-g{
+  width: 235px;
+  
+  display: flex;
+  justify-content: center;
+}
+.next{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.next-st{
+  text-decoration: none;
+  color: rgb(216, 143, 59);
+}
+.next-st:hover{
+  text-decoration: none;
+  color: rgb(57, 35, 5);
+}
+
+
