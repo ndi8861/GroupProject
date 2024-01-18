@@ -79,5 +79,18 @@ body{
   text-decoration: none;
   color:rgb(212, 185, 150);
 }
-
+.img-g {
+  margin: auto;
+}
+@media (max-width: 575px) {
+  .next{
+    display:none;
+  }
+  .btn-style{
+    text-align: center;
+  }
+}
+  
+    
+  
 
