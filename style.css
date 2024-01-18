@@ -1,10 +1,151 @@
-.navbar-nav .nav-link {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-    color: #ED9821;
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+:root {
+  --nav-text-color:#ED9821;
+  --nav-text-color2:#ffcb1f;
+  --nav-background-color:#392305;
+}
+
+nav {
+  font-weight: 100;
+  font-size: 20px;
+  color: var(--nav-text-color)
+}
+
+.nav-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #392305;
+  padding: 8px 12px;
+  min-height: 130px;
+}
+
+.nav-style a {
+  text-decoration: none;
+  color: var(--nav-text-color)
+}
+
+.nav-rmenu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-rmenu li {
+  padding: 8px 12px;
+}
+
+.nav-rmenu li a:hover {
+  color: var(--nav-text-color2);
+}
+
+.nav-lmenu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-lmenu li {
+  padding: 8px 12px;
+}
+
+.nav-lmenu li a:hover {
+  color: var(--nav-text-color2);
+}
+
+.nav-search {
+  border: none;
+  border-bottom: 3px solid var(--nav-text-color);
+  color:var(--nav-text-color);
+  background: none;
+  width: 220px;
+}
+
+input::placeholder {
+  color: var(--nav-text-color)
+}
+
+.nav-search-icon {
+  position: relative;
+  right: 18px;
+}
+
+.nav-toggleBtn {
+  position: absolute;
+  padding-top: 16px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--nav-text-color);
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .nav-style {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    min-height: 92px;
   }
+
+  .nav-rmenu {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+    padding-top: 92px;
+  }
+
+  .nav-lmenu {
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      display: none;
+    }
+
+  .nav-mlogo {
+    position: absolute;
+    left: 32px;
+    padding: 16px;
+  }
+
+  .nav-toggleBtn {
+    display: block;
+  }
+
+  .nav-rmenu.active {
+    display: flex;
+  }
+  .nav-lmenu.active {
+      display: flex;
+    }
   
-  .navbar {
-    background-color: #392305;
+  .nav-search {
+    width: 200px;
   }
+}
+
+@media screen and (max-width: 1385px){
+  .nav-lmenu span {
+      display: none;
+  }  
+}
+
+.banner-back {
+  background-color: #392305;
+  height: 38rem;
+}
+
+@media screen and (max-width: 1350px) {
+  .banner-back {
+    height: 22rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-back {
+    height: 12rem;
+  }
+}
