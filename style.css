@@ -25,6 +25,23 @@
     padding-top: 50px;
 }
 
+.gap_bb{
+    padding-bottom: 50px;
+}
+
+.gap_bc{
+    padding-top: 130px;
+}
+
+.gap_price{
+    padding-top: 20px;
+}
+
+.little_gap {
+    padding-top: 7px;
+}
+
+
 .brand_font{
     display: flex;
     justify-content: center;
@@ -33,3 +50,67 @@
     font-weight: bold;
     padding-bottom: 20px;
 }
+
+.hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+.hover01 figure:hover img {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.center {
+    text-align: center;
+    align-content: center;
+}
+
+.text_size {
+    font-size:23px;
+    font-weight: normal;
+}
+
+.card_text1 a:before {
+    color: black;
+    content: attr(data-hover);
+    position: absolute;
+    opacity: 0;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: none;
+  }
+  
+  .card_text1 a:hover:before, .card_text1 a:focus:before {
+    -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+
+  li {
+    list-style:none;
+  }
+  
+  .button {
+    color:black;
+  }
+
+  .card_main1 {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  .card_main1:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
