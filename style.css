@@ -86,10 +86,11 @@ body{
   .next{
     display:none;
   }
-  .btn-style{
+}
+@media (max-width: 575px) {
+  .btn-st{
     text-align: center;
   }
-}
   
     
   
