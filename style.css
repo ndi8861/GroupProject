@@ -1,29 +1,67 @@
 body{
   font-family: 'Noto Sans KR', sans-serif;
 }
+.col {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+  flex-grow: 0;
+  background-color: white;
+}
+
+
+ 
+.flexbox{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+  padding: 10px;
+  background-color: #e8e8e8;
+  }
 
 .card-h{
   margin-top: 5px;
   font-size: small;
+}
+.card-body{
+  color: rgb(57, 35, 5);
+}
+.card-body:hover { 
+  text-decoration: none;
+
+}
+.pont-po:hover{
+ text-decoration-line: none;
+  
 }
 
 .main-color{
   color: rgb(57, 35, 5);
 }
 
+.btn-outer{
+  color:rgb(212, 185, 150);
+  margin-right: 15px ;
+  
+}
+.btn-outer:hover{
+  color:rgb(212, 185, 150);
+  text-decoration-line: none;
+  
+}
+
 .btn-h{
   color: rgb(57, 35, 5);
   margin-right: 15px;
   text-decoration-line: none;
-
 }
 .btn-h:hover{
-  text-decoration-color:rgb(57, 35, 5) ;
-  color: rgb(57, 35, 5);
-  
+  text-decoration-color:  rgb(57, 35, 5);
+  color:rgb(57, 35, 5);
 }
 .img-g{
   width: 235px;
+  border: none;
   
   display: flex;
   justify-content: center;
@@ -35,11 +73,11 @@ body{
 }
 .next-st{
   text-decoration: none;
-  color: rgb(216, 143, 59);
+  color:rgb(57, 35, 5);
 }
 .next-st:hover{
   text-decoration: none;
-  color: rgb(57, 35, 5);
+  color:rgb(212, 185, 150);
 }
 
 
