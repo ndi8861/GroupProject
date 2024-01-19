@@ -151,3 +151,9 @@ li {
 .price:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+  .hide {
+    display: none;
+  }
+}
