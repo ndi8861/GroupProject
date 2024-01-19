@@ -1,17 +1,17 @@
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 :root {
-  --nav-text-color:#ED9821;
-  --nav-text-color2:#ffcb1f;
-  --nav-background-color:#392305;
+  --nav-text-color: #ed9821;
+  --nav-text-color2: #ffcb1f;
+  --nav-background-color: #392305;
 }
 
 nav {
   font-weight: 100;
   font-size: 20px;
-  color: var(--nav-text-color)
+  color: var(--nav-text-color);
 }
 
 .nav-style {
@@ -25,7 +25,7 @@ nav {
 
 .nav-style a {
   text-decoration: none;
-  color: var(--nav-text-color)
+  color: var(--nav-text-color);
 }
 
 .nav-rmenu {
@@ -42,10 +42,18 @@ nav {
   color: var(--nav-text-color2);
 }
 
+.nav-search-container {
+  display: none;
+}
+
 .nav-lmenu {
   display: flex;
   list-style: none;
   padding-left: 0;
+}
+
+.nav-lmenu {
+  white-space: nowrap;
 }
 
 .nav-lmenu li {
@@ -59,18 +67,19 @@ nav {
 .nav-search {
   border: none;
   border-bottom: 3px solid var(--nav-text-color);
-  color:var(--nav-text-color);
+  color: var(--nav-text-color);
   background: none;
-  width: 220px;
+  width: 175px;
 }
 
 input::placeholder {
-  color: var(--nav-text-color)
+  color: var(--nav-text-color);
 }
 
 .nav-search-icon {
   position: relative;
-  right: 18px;
+  right: 22px;
+  margin-bottom: 5px;
 }
 
 .nav-toggleBtn {
@@ -88,9 +97,11 @@ input::placeholder {
     align-items: flex-start;
     padding: 8px 24px;
     min-height: 92px;
+    position: relative;
   }
 
   .nav-rmenu {
+    order: 2;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -98,39 +109,48 @@ input::placeholder {
     padding-top: 92px;
   }
 
-  .nav-lmenu {
-      flex-direction: column;
-      align-items: flex-end;
-      width: 100%;
-      display: none;
-    }
-
   .nav-mlogo {
     position: absolute;
     left: 32px;
-    padding: 16px;
+    padding-top: 20px;
+  }
+
+  .nav-mlogo img {
+    width: 100px;
   }
 
   .nav-toggleBtn {
     display: block;
   }
 
+  .nav-lmenu div {
+    display: none;
+  }
+
   .nav-rmenu.active {
     display: flex;
   }
-  .nav-lmenu.active {
-      display: flex;
-    }
-  
+
+  .nav-lmenu {
+    position: absolute;
+    right: 64px;
+    top: 20px;
+  }
+
+  .nav-search-container {
+    display: block;
+  }
+
   .nav-search {
     width: 200px;
   }
+
 }
 
-@media screen and (max-width: 1385px){
+@media screen and (max-width: 1385px) {
   .nav-lmenu span {
-      display: none;
-  }  
+    display: none;
+  }
 }
 
 .banner-back {

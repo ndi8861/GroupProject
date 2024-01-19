@@ -1,189 +1,108 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>STMALL</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="footer.css" />
-    <script
-      src="https://kit.fontawesome.com/2c827c8cca.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" defer></script>
-  </head>
+<html lang="ko">
 
-  <body>
-    <nav class="nav-style">
-      <ul class="nav-rmenu">
-        <li>
-          <a href="#">NEW ARRIVAL</a>
-        </li>
-        <li>
-          <a href="#">BRAND</a>
-        </li>
-        <li>
-          <a href="#">MEN</a>
-        </li>
-        <li>
-          <a href="#">WOMEN</a>
-        </li>
-        <li>
-          <a href="#">SALE</a>
-        </li>
-        <li>
-          <a href="#">SEASON OFF</a>
-        </li>
-      </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>STmall</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d67e6a2c3f.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+</head>
 
-      <div class="nav-mlogo">
-        <a href="#">
-          <img src="/source/stlogo.png" alt="Bootstrap" width="150rem" />
-        </a>
-      </div>
-
-      <ul class="nav-lmenu">
-        <li>
-          <input class="nav-search" placeholder="Search" /><i
-            class="fa-solid fa-magnifying-glass nav-search-icon"
-          ></i>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-right-to-bracket"></i>
-            <span> LOGIN</span>
-          </a>
-        </li>
-        <li>
-          <a href="#"> <i class="fa-solid fa-user"></i><span> JOIN</span></a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-cart-plus"></i><span> MY CART</span></a
-          >
-        </li>
-      </ul>
-      <a href="#" class="nav-toggleBtn">
-        <i class="fa-solid fa-bars"></i>
-      </a>
-    </nav>
-    
-    <div class="banner-back">
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide carousel-dark w-75 m-auto"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="source/st_banner.png" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="source/st_banner2.png" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="source/st_banner3.png" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="source/st_banner4.png" class="d-block w-100" alt="..." />
-          </div>
+<body>
+  <nav class="nav-style">
+    <ul class="nav-rmenu">
+      <li>
+        <div class="nav-search-container">
+          <input class="nav-search" placeholder="Search" /><i class="fa-solid fa-magnifying-glass nav-search-icon"></i>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      </li>
+      <li>
+        <a href="#">NEW</a>
+      </li>
+      <li>
+        <a href="#">BRAND</a>
+      </li>
+      <li>
+        <a href="#">MEN</a>
+      </li>
+      <li>
+        <a href="#">WOMEN</a>
+      </li>
+      <li>
+        <a href="#">SALE</a>
+      </li>
+      <li>
+        <a href="#">SEASON</a>
+      </li>
+    </ul>
+
+    <div class="nav-mlogo">
+      <img src="/source/stlogo.png" alt="Bootstrap" width="150rem" />
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-    <footer>
-      <div class="container">
-        <div class="firstbox">
-          <div class="logo">
-            <a href="#"><img src="images/logo.png" alt="" /></a>
-          </div>
-          <div class="sns">
-            <ul>
-              <li><i class="fa-brands fa-twitter"></i></li>
-              <li><i class="fa-brands fa-instagram"></i></li>
-              <li><i class="fa-brands fa-facebook-f"></i></li>
-            </ul>
-          </div>
+
+    <ul class="nav-lmenu">
+      <li>
+        <div>
+          <input class="nav-search" placeholder="Search" /><i class="fa-solid fa-magnifying-glass nav-search-icon"></i>
         </div>
-        <div class="secondbox">
-          <div class="left">
-            <div class="top">
-              <ul>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">서비스이용약관</a></li>
-                <li><a href="#">배송/환불 규정</a></li>
-                <li><a href="#">입점문의</a></li>
-              </ul>
-              <ul>
-                <li>회사명: STMALL</li>
-                <li>대표: 권문진</li>
-                <li>사업자등록번호: 220-11-0000</li>
-              </ul>
-              <div>주소: 대전광역시 유성구 성심로 99층 999호</div>
-              <ul>
-                <li>TEL: 090-9999-0000</li>
-                <li>FAX: 042-1234-5678</li>
-                <li>E-MAIL: stmall@naver.com</li>
-              </ul>
-            </div>
-            <div class="bottom">
-              <div>
-                스트릿 패션의 개성 강조와 함께, 편집샵은 고객들에게 자유로운
-                스타일 탐색을 제안하는 모험적이고 독창적인 분위기를 제공합니다.
-              </div>
-              <div>Copyright (c) 2024 STMALL. ALL Rights Reserved</div>
-            </div>
-          </div>
-          <div class="right">
-            <div class="top">
-              <div>고객센터</div>
-              <div>090-999-0000</div>
-            </div>
-            <div class="bottom">
-              <ul>
-                <li><span>평일</span> 오전 10시-오후 5시</li>
-                <li><span>점심</span> 오후 12시-오후 2시</li>
-                <li><span>휴무</span> 주말/공휴일</li>
-              </ul>
-            </div>
-          </div>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <span> LOGIN</span>
+        </a>
+      </li>
+      <li>
+        <a href="#"> <i class="fa-solid fa-user"></i><span> JOIN</span></a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-cart-plus"></i><span> MY CART</span></a>
+      </li>
+    </ul>
+    <a href="#" class="nav-toggleBtn">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+  </nav>
+
+  <div class="banner-back">
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-dark w-75 m-auto" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="source/st_banner.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="source/st_banner2.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="source/st_banner3.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="source/st_banner4.png" class="d-block w-100" alt="..." />
         </div>
       </div>
-    </footer>
-  </body>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
