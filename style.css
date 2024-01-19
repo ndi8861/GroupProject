@@ -21,16 +21,28 @@
     justify-content: center;
 }
 
+.logo_bottom{
+  margin-top:10px;
+}
+
+.logo_right{
+  margin-left:15px;
+}
+
+.logo_right_1{
+  margin-left:25px;
+}
+
 .gap {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .gap_bb{
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .gap_bc{
-    padding-top: 130px;
+    padding-top: 170px;
 }
 
 .gap_price{
@@ -41,12 +53,19 @@
     padding-top: 7px;
 }
 
+.gap_next{
+  padding-bottom: 100px;
+}
+
+body,html {
+  height: 100%;
+} 
 
 .brand_font{
     display: flex;
     justify-content: center;
     font-family: arial, sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     padding-bottom: 20px;
 }
@@ -70,7 +89,7 @@
 
 .text_size {
     font-size:23px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .card_text1 a:before {
@@ -113,4 +132,9 @@
   .card_main1:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+  }
+
+  .card_pic {
+    width: 100% ;
+    height: 330px;
   }
