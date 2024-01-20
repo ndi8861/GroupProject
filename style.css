@@ -94,7 +94,7 @@ padding-left: 700px;
   margin: auto;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 1500px) {
   .next-st {
     display: none;
   }
@@ -104,13 +104,16 @@ padding-left: 700px;
   .btn-st {
     text-align: center;
   }
-  @media (max-width: 575px) {
+  @media (max-width: 517px) {
     .next-st{
       padding-bottom: 30px;
     }
+    .next{
+      display: none;
+    }
   }
   
-  @media (max-width: 575px) {
+  @media (max-width: 1500px) {
     .card a{
       text-align: center ;
       margin-bottom:  10px;
