@@ -5,6 +5,7 @@
 .oval-button {background: none;
     border: none;
     padding: 15px 20px 15px 20px; 
+    opacity: 0.5;
    
       
 }
@@ -12,8 +13,8 @@
 .ov-button {background: none;
     border: none;
     padding: 15px 10px 15px 10px;
-   
-      
+    text-decoration: underline; /* 언더라인(아래줄) 스타일 부여*/
+    font-weight: bold;    
 }
 
 
@@ -24,33 +25,26 @@
     text-decoration: none;
     
     
+    
 }
 
-.ov-button:hover {
-    text-decoration: underline; /* 언더라인(아래줄) 스타일 부여*/
-    font-weight: bold;
-}
+
 
 
  .oval-button:hover {
     text-decoration: underline; /* 언더라인(아래줄) 스타일 부여*/
     font-weight: bold;
+    opacity: 1;
 }
 
-.carousel-inner {
-    padding: 60px 60px 60px 60px; /* 상 우 하 좌 */
+
+
+  .d-block{
+    padding: 40px 30px 40px 30px; /* 상 우 하 좌 */
+    min-width: 100%;
+      height: auto;
+
   }
-
-
-
-.d-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-
 
 /* 더보기 버튼 */
 .btn-secondary{
@@ -69,5 +63,4 @@
 }
 
 
-
-  
+    
